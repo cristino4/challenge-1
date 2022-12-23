@@ -3,27 +3,29 @@
     padding: 0;
     margin: 0;
 }
-
+/* inless specifically noted, the background color of the site is white */
 body {
     background-color: #d9dcd6;
 }
-
+/* This defines the header styling. The text is white, background blue, with some padding to make it more readable */
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
-
+/* This defines the font and display mode for the word Horiseon */
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
-
+/* the letters seo in Horiseon are given a different color. The color isn't really readable, so 
+a new color is defined to make the distinction more obvious. Customer accepts this color palette.*/
 .header h1 .seo {
-    color: #d9dcd6;
+    /* color: #d9dcd6; */
+    color: gray
 }
-
+/* This defines the header div element sizing, text style, and position */
 .header div {
     padding-top: 15px;
     margin-right: 20px;
@@ -32,33 +34,51 @@ body {
     font-size: 20px;
 }
 
+/* This property doesn't do anything to the site. */
 .header div ul {
-    list-style-type: none;
+    list-style-type:none;
 }
 
+/* This property makes sure the header links are side by side to eachother */
 .header div ul li {
     display: inline-block;
     margin-left: 25px;
 }
+
 
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
-p {
+/* added .content class selector to clarify where the p selectors are */
+.content p {
     font-size: 16px;
 }
 
-.hero {
+
+/* changed "hero" class name to "main-image" for clarity. Also CSS properties are
+applied more specifically to img element and not main-image class element (which renders
+the image too large)*/
+.main-image img{
+    max-height: auto;
+    max-width: 100%;
+    margin-bottom: 25px;
+}
+
+/* Removed image link from CSS as a background. Added the image link to HTML file
+to consolidate all image links into a single file.
+    .hero {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
-}
+} */
 
+
+/* Next two properties specify the position of the 3 pictures in the content section */
 .float-left {
     float: left;
     margin-right: 25px;
@@ -69,70 +89,13 @@ p {
     margin-left: 25px;
 }
 
+/* specifies the size and positioning of the content elements */
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
-.benefits {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
-}
-
-.benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
 
 .search-engine-optimization {
     margin-bottom: 20px;
@@ -186,6 +149,75 @@ p {
 .social-media-marketing h2 {
     margin-bottom: 20px;
     font-size: 36px;
+}
+
+/* specifies the size and positioning and style fo the benefits elements 
+this and all other "benefits" related items were moved in this script 
+towards the bottom of the source code for clarity
+Order of CSS properties:
+1. Header and other properties that apply to all elements
+2. Content properties
+3. Benefits properties
+4. footer properties
+*/
+.benefits {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+
+/* specifies the postioning and style of the items inside the benefits elements */
+.benefit-lead {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefit-brand {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefit-cost {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefit-lead h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-brand h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-cost h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-lead img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+.benefit-brand img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+.benefit-cost img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
 }
 
 .footer {
