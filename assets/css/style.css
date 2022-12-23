@@ -45,15 +45,11 @@ a new color is defined to make the distinction more obvious. Customer accepts th
     margin-left: 25px;
 }
 
-/* changed anchor element selector from "a" to "header-links for clarity */
-header-links {
+
+a {
     color: #ffffff;
     text-decoration: none;
 }
-/* a {
-    color: #ffffff;
-    text-decoration: none;
-} */
 
 /* added .content class selector to clarify where the p selectors are */
 .content p {
