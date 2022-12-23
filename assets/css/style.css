@@ -3,26 +3,29 @@
     padding: 0;
     margin: 0;
 }
-
+/* inless specifically noted, the background color of the site is white */
 body {
     background-color: #d9dcd6;
 }
-
+/* This defines the header styling. The text is white, background blue, with some padding to make it more readable */
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
-
+/* This defines the font and display mode for the word Horiseon */
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
-
+/* the letters seo in Horiseon are given a different color. The color isn't really readable, so 
+a new color is defined to make the distinction more obvious. Customer accepts this color palette.*/
 .header h1 .seo {
-    color: #d9dcd6;
+    /* color: #d9dcd6; */
+    color: gray
 }
+
 
 .header div {
     padding-top: 15px;
